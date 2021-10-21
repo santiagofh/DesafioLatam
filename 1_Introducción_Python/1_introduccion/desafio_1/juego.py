@@ -13,7 +13,7 @@ elif seleccion == "tijera":
     juego1=3
     print("usuario juega tijera")
 else:
-    juego1=""
+    juego1="error"
 
 juego2=random.randint(1,3)
 if juego2 == 1:
