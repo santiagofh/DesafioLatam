@@ -20,9 +20,9 @@ lista_uno(autos)
 promedio_vel=promedio([(auto[1]) for auto in autos])
 [print(i[0]) for i in autos if (i[1]) >= promedio_vel]
 # %% 4
-for auto in autos:
-    if auto[3]==True:
-        print(auto[0])
-
 [print(auto[0]) for auto in autos if auto[3]==True]
+# %% 5
+
+promedio_vel=promedio([(auto[1]) for auto in autos])
+mayor_que_promedio=[]
 # %%
