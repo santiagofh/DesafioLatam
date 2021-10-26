@@ -15,5 +15,6 @@ mtcars_preproc=pd.read_csv("mtcars_preproc.csv",index_col="Unnamed: 0")
 def lista_4(autos):
     [print(auto[0]) for auto in autos if auto[3]==True]
 lista_4(autos) 
+print("hola")
 
 # %%
