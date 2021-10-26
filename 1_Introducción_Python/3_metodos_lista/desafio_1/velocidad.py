@@ -5,6 +5,5 @@ def promedio(lista):
     numerador=reduce(lambda x,y:x+y,lista)
     denominador=len(lista)
     promedio=numerador/denominador
-    print("promedio")
     return promedio
 # %%

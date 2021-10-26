@@ -1,4 +1,4 @@
-# %% 1
+# %% 5
 import pandas as pd
 from pandas.core import indexing
 from velocidad import promedio
@@ -12,8 +12,16 @@ autos=[auto1,auto2,auto3,auto4,auto5,auto6]
 cars=pd.read_csv("cars.csv",index_col="Unnamed: 0")
 mtcars_preproc=pd.read_csv("mtcars_preproc.csv",index_col="Unnamed: 0")
 
-def lista_uno(autos):
-    autos1=[auto[0] for auto in autos]
+promedio_mpg=promedio([(auto[1]) for auto in autos])
+def mayor_promedio(valor):
+    if valor >=promedio_mpg:
+        return True
+    else:
+        return False
+def lista_mpg(autos):
+    autos1=[auto[1] for auto in autos]
     return autos1
-lista_uno(autos)
+
+filter_mpg = list(filter(mayor_promedio, lista_mpg(autos)))
+print(str(list(filter_mpg)))
 # %%
