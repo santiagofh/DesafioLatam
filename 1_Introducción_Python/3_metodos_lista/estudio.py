@@ -18,3 +18,14 @@ from functools import reduce
 animals=['gato','perro','hurón']
 reduce(lambda x,y : x+y,animals)
 # %%
+import numpy as np
+primera = np.arange(50)
+segunda = primera[10:20]
+segunda[2] = "100"
+print(primera[12])
+# %%
+mascotas = np.array(["Copi-Copi", "Elemento", "Adjetivo",
+"Mente en Blanco", "Chaucha", "Cabecita", "Bigote", "Mutante"])
+especies = np.array(["perro", "perro", "perro", "perro", "perro", "gato", "gato","gato"])
+filtrados = mascotas[~(especies == 'gato')]
+# %%
