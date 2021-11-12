@@ -22,3 +22,6 @@ lista.sort()
 from itertools import groupby
 diccionario = {k: len(list(v)) for k, v in groupby(lista)}
 # %%
+print("Diccionario generado: ")
+print(diccionario)
+# %%
