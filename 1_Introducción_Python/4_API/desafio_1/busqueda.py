@@ -7,7 +7,7 @@ ventas={
     'Abril':17000,
     'Mayo':81000,
     'Junio':13000,
-    'Julio':21000,
+    'Julio':13000,
     'Agosto':41200,
     'Septiembre':25000,
     'Octubre':21500,
@@ -19,8 +19,8 @@ for i in list:
     for mes, venta in ventas.items():
         if int(i) == venta:
             print(mes)
-            break
+            
         else:
             print("no encontrado")
-            break
+            
 # %%
